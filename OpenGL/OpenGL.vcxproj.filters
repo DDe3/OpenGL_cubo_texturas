@@ -21,9 +21,6 @@
     <ClCompile Include="src\glad.c">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="src\cube.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\stb_image.h">
@@ -35,6 +32,9 @@
     <ClInclude Include="src\Cube_Shader.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="src\camera.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="shaders\fragment.shader" />
@@ -43,6 +43,12 @@
     <None Include="shaders\texture_fragment.shader" />
     <None Include="shaders\cube_vertex.shader" />
     <None Include="shaders\cube_fragment.shader" />
+    <None Include="shaders\iluminacion_basica_vs.shader" />
+    <None Include="shaders\iluminacion_basica_fs.shader" />
+    <None Include="shaders\luz_cubo_vs.shader" />
+    <None Include="shaders\luz_cubo_fs.shader" />
+    <None Include="shaders\texture_light_vertex.shader" />
+    <None Include="shaders\texture_light_fragment.shader" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="textures\wall.jpg">

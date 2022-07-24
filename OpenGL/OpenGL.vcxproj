@@ -133,11 +133,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\cube.cpp" />
     <ClCompile Include="src\Application.cpp" />
     <ClCompile Include="src\glad.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\camera.h" />
     <ClInclude Include="src\Cube_Shader.h" />
     <ClInclude Include="src\SHADER.h" />
     <ClInclude Include="src\stb_image.h" />
@@ -146,7 +146,13 @@
     <None Include="shaders\cube_fragment.shader" />
     <None Include="shaders\cube_vertex.shader" />
     <None Include="shaders\fragment.shader" />
+    <None Include="shaders\iluminacion_basica_fs.shader" />
+    <None Include="shaders\iluminacion_basica_vs.shader" />
+    <None Include="shaders\luz_cubo_fs.shader" />
+    <None Include="shaders\luz_cubo_vs.shader" />
     <None Include="shaders\texture_fragment.shader" />
+    <None Include="shaders\texture_light_fragment.shader" />
+    <None Include="shaders\texture_light_vertex.shader" />
     <None Include="shaders\texture_vertex.shader" />
     <None Include="shaders\vertex.shader" />
   </ItemGroup>
