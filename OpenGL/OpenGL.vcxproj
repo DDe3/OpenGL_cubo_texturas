@@ -146,6 +146,8 @@
     <None Include="shaders\cube_fragment.shader" />
     <None Include="shaders\cube_vertex.shader" />
     <None Include="shaders\fragment.shader" />
+    <None Include="shaders\framebuffer_screen_fragment.shader" />
+    <None Include="shaders\framebuffer_screen_vertex.shader" />
     <None Include="shaders\iluminacion_basica_fs.shader" />
     <None Include="shaders\iluminacion_basica_vs.shader" />
     <None Include="shaders\luz_cubo_fs.shader" />

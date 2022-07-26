@@ -49,6 +49,8 @@
     <None Include="shaders\luz_cubo_fs.shader" />
     <None Include="shaders\texture_light_vertex.shader" />
     <None Include="shaders\texture_light_fragment.shader" />
+    <None Include="shaders\framebuffer_screen_vertex.shader" />
+    <None Include="shaders\framebuffer_screen_fragment.shader" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="textures\wall.jpg">
