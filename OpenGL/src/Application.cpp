@@ -834,7 +834,7 @@ int main3()
 
 }
 
-int main() 
+int main()
 {
     glfwInit();
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
@@ -1182,7 +1182,7 @@ int main()
     textureLightShader.use();
 
     // ----------------------------------------------------------------------------------------------------------------
-    
+
     float quadVertices[] = {  // Vertices que cubren toda la pantalla
         // positions   // texCoords
         -1.0f,  1.0f,  0.0f, 1.0f,
@@ -1257,6 +1257,7 @@ int main()
         textureLightShader.setMat4("view", view);
 
         glm::mat4 model = glm::mat4(1.0f);
+        model = glm::rotate(model, (float)glfwGetTime(), glm::vec3(0.0f, 1.0f, 0.0f));
         textureLightShader.setMat4("model", model);
 
         // render 
@@ -1337,8 +1338,6 @@ int main()
     glfwTerminate();
     return 0;
 }
-
-
 
 void processInput(GLFWwindow* window)
 {

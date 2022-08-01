@@ -67,7 +67,9 @@ void Convolucion(float kernel[9])
 void main()
 {
     vec3 col = texture(screenTexture, TexCoords).rgb;
-    Convolucion(bordes);
+    //Invertir();
+    //EscalaDeGrises();
+    Convolucion(blur);
 }
 
 
