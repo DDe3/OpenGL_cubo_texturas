@@ -1247,9 +1247,15 @@ int main()
         glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
+
+        lightPos.x = 2.0f * sin(glfwGetTime());
+        lightPos.y = -0.3f;
+        lightPos.z = 1.5f * cos(glfwGetTime());
+
         textureLightShader.use();
         textureLightShader.setVec3("lightColor", 1.0f, 1.0f, 1.0f);
         textureLightShader.setVec3("lightPos", lightPos);
+        textureLightShader.setVec3("viewPos", camera.Position);
 
         glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
         glm::mat4 view = camera.GetViewMatrix();
@@ -1257,7 +1263,7 @@ int main()
         textureLightShader.setMat4("view", view);
 
         glm::mat4 model = glm::mat4(1.0f);
-        model = glm::rotate(model, (float)glfwGetTime(), glm::vec3(0.0f, 1.0f, 0.0f));
+        model = glm::rotate(model, (float)glfwGetTime(), glm::vec3(0.0f, -1.0f, 0.0f));
         textureLightShader.setMat4("model", model);
 
         // render 
